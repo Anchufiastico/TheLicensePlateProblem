@@ -1,0 +1,14 @@
+<div class="container">
+  <mat-form-field class="example-full-width">
+    <mat-label>License Plate Number</mat-label>
+    <input
+      matInput
+      type="number"
+      [(ngModel)] = "licensePlateNumber"
+      placeholder="Ex. 45675341"
+      min="0"
+      max="559744029"
+    />
+  </mat-form-field>
+  <app-license-plate [userInput] ="licensePlateNumber"></app-license-plate>
+</div>

@@ -1,0 +1,28 @@
+.license-card {
+  height: 110%;
+  width: 90%;
+}
+
+.license-card-footer {
+  padding: 0px;
+}
+mat-card-header,
+mat-card-content,
+mat-card-footer {
+  text-align: center;
+}
+mat-card-header {
+  justify-content: center;
+}
+mat-card-title,
+mat-card-footer {
+  font-size: 200%;
+}
+p{
+  margin: 0px;
+}
+app-base36-parser{
+    font-size: 10vw;
+    padding: 0px;
+    margin: 0px;
+}
