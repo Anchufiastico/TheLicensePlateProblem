@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PlateCustomizerComponent } from './plate-customizer/plate-customizer.component';
+import { PlateCustomizerComponent } from './Components/plate-customizer/plate-customizer.component';
 
 @Component({
   selector: 'app-root',
