@@ -1,59 +1,9 @@
-# TheLicensePlateProblemHernandezDavid
+Hi there! 👋
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+This project is a small test where I built a few components to display a license plate based on a user-provided number.
 
-## Development server
+To achieve this, I created a pipeline that converts the numeric input into a valid license plate format. I also limited the user input to ensure the resulting license plate always has exactly 6 characters.
 
-To start a local development server, run:
+For the conversion logic, I was inspired by the hexadecimal system. However, since license plates in this case can include both letters and numbers, I realized there are 36 possible characters (0–9 and A–Z), compared to just 16 in hexadecimal. Because of this, I decided to implement a custom Base36 conversion.
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Although there are some libraries available for Base36, most seemed outdated or unnecessarily complex, so I wrote my own function to handle the conversion in a more straightforward way.
