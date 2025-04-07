@@ -7,7 +7,7 @@
       [(ngModel)] = "licensePlateNumber"
       placeholder="Ex. 45675341"
       min="0"
-      max="2176782335"
+      [attr.max]=MAX_LIMIT_NUMBER
     />
   </mat-form-field>
   <app-license-plate [userInput] ="licensePlateNumber"></app-license-plate>

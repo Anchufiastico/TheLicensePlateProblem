@@ -20,5 +20,6 @@ import { MatInputModule } from '@angular/material/input';
   styleUrl: './plate-customizer.component.scss'
 })
 export class PlateCustomizerComponent {
+  MAX_LIMIT_NUMBER = 2176782335;
   licensePlateNumber: number = 0;
 }

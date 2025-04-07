@@ -3,9 +3,9 @@
     <mat-card-title>David</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <app-base36-parser [userInput]="userInput"></app-base36-parser>
+    {{ userInput | base36 }}
   </mat-card-content>
-  <mat-card-footer class="license-card-footer">Hernandez i Ferrer
+  <mat-card-footer class="license-card-footer"
+    >Hernandez i Ferrer
   </mat-card-footer>
 </mat-card>
-
